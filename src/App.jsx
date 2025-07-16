@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
-import ScrollTimeline from "./components/scrollIndicator";
+import ScrollTimeline from "./components/ScrollIndicator";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Project";
