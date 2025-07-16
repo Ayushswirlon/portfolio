@@ -6,5 +6,16 @@ import webfontDownload from "vite-plugin-webfont-dl";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), webfontDownload()],
+  plugins: [
+    react(),
+    tailwindcss({
+      theme: {
+        fontSize: {
+          base: "1rem",
+          // override safely
+        },
+      },
+    }),
+    webfontDownload(),
+  ],
 });
