@@ -130,7 +130,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mt-10 relative z-20 w-full max-w-5xl bg-neutral-900/30 border border-neutral-600 rounded-xl shadow-2xl backdrop-blur-sm"
+        className="mt-[7%] relative z-20 w-full max-w-5xl bg-neutral-900/30 border border-neutral-600 rounded-xl shadow-2xl backdrop-blur-sm"
       >
         {/* Browser header */}
         <div className="flex items-center gap-2 p-2 px-4 bg-neutral-800 border-b border-neutral-600 rounded-t-xl">
