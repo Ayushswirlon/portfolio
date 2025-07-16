@@ -10,7 +10,7 @@ import {
 import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
 
 import { useEffect, useState } from "react";
-
+import image from "../assets/images/profile.jpeg";
 const techIcons = [
   {
     icon: <FaHtml5 />,
@@ -114,7 +114,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+            src={image}
             alt="avatar"
             className="w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-blue-400 mb-6 shadow-lg"
           />
