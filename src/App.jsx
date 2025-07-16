@@ -4,7 +4,7 @@ import ScrollTimeline from "./components/scrollIndicator";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Project";
-import SocialSidebar from "./components/sidebar";
+import SocialSidebar from "./components/Sidebar";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
