@@ -35,7 +35,6 @@ import {
 } from "react-icons/si";
 import {
   DiVisualstudio,
-  DiNpm,
   DiAws,
   DiFirebase,
   DiLinux,

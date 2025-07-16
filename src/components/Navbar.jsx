@@ -9,7 +9,7 @@ function NavBar() {
             <a
               aria-current="page"
               className="flex items-center text-wxl font-bold text-white animate-fadeSlide glow"
-              href="/"
+              href="#"
             >
               <TbCode className="h-6 w-6 text-white" />
 

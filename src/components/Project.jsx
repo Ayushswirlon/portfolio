@@ -1,41 +1,29 @@
 import { motion } from "framer-motion";
+import Event from "../assets/images/Event.png";
+import Colab from "../assets/images/Colab.png";
+import cart from "../assets/images/cart.png";
 
 const projects = [
   {
     title: "Event Manager",
     desc: "College event platform with login, participation & attendance.",
-    image: "/images/project1.jpg",
+    image: Event,
     span: "row-span-1",
-  },
-  {
-    title: "Portfolio Website",
-    desc: "Animated personal portfolio using React, Tailwind & Framer Motion.",
-    image: "/images/project2.jpg",
-    span: "row-span-2",
+    link: "https://clg-event-management.vercel.app/",
   },
   {
     title: "Whiteboard (CoLab)",
     desc: "Real-time collaborative whiteboard using WebSockets.",
-    image: "/images/project3.jpg",
-    span: "row-span-1",
-  },
-  {
-    title: "Plant Classifier",
-    desc: "ML model to detect plant disease via uploaded image.",
-    image: "/images/project4.jpg",
+    image: Colab,
     span: "row-span-2",
+    link: "https://github.com/Ayushswirlon/colab",
   },
   {
-    title: "Blogify",
-    desc: "MERN-based blog platform with authentication and rich editor.",
-    image: "/images/project5.jpg",
+    title: "Basic Shopping Cart",
+    desc: "Simple shopping cart with product listing and cart management.",
+    image: cart,
     span: "row-span-1",
-  },
-  {
-    title: "Code Snippet Hub",
-    desc: "Code sharing platform for real-time snippets.",
-    image: "/images/project6.jpg",
-    span: "row-span-1",
+    link: "https://assignment-1-szoi.vercel.app/",
   },
 ];
 
@@ -70,9 +58,12 @@ const Projects = () => {
               <div className="absolute bottom-4 left-4 right-4 z-10">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="text-sm text-gray-300">{project.desc}</p>
-                <button className="mt-2 text-sm text-blue-400 hover:underline">
+                <a
+                  href={project.link}
+                  className="mt-2 text-sm text-blue-400 hover:underline"
+                >
                   Preview →
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}

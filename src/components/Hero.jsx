@@ -6,41 +6,9 @@ import {
   FaReact,
   FaNodeJs,
   FaGithub,
-  FaJs,
 } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiTypescript,
-  SiNextdotjs,
-  SiRedux,
-  SiPostman,
-  SiFigma,
-  SiGit,
-  SiVite,
-  SiNpm,
-  SiJsonwebtokens,
-  SiSocketdotio,
-  SiSupabase,
-  SiMysql,
-  SiPostgresql,
-  SiCplusplus,
-  SiCloudinary,
-  SiGraphql,
-  SiVercel,
-  SiDocker,
-  SiBootstrap,
-} from "react-icons/si";
-import {
-  DiVisualstudio,
-  DiNpm,
-  DiAws,
-  DiFirebase,
-  DiLinux,
-  DiJava,
-  DiPython,
-} from "react-icons/di";
+import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+
 import { useEffect, useState } from "react";
 
 const techIcons = [
@@ -168,7 +136,8 @@ const Hero = () => {
             transition={{ delay: 0.7, duration: 0.7 }}
             className="text-gray-300 text-lg md:text-xl max-w-3xl mb-6"
           >
-            Softwate Engineer | Frontend developer | Full-stack developer
+            Softwate Engineer | Frontend developer | Backend developer |
+            Full-stack developer
             <br />
             Solving problems with code and creating beautiful, interactive
             experiences.
@@ -183,7 +152,7 @@ const Hero = () => {
           >
             <motion.a
               whileHover={{ scale: 1.05 }}
-              href="https://github.com/yourusername"
+              href="https://github.com/Ayushswirlon"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
@@ -192,7 +161,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.05 }}
-              href="#contact"
+              href="#Contact"
               className="inline-flex items-center px-6 py-3 bg-transparent border border-blue-500 text-blue-500 font-semibold rounded-lg hover:bg-blue-500 hover:text-white transition"
             >
               Contact Me

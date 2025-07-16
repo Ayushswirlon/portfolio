@@ -1,10 +1,4 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaInstagram,
-  FaArrowLeft,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import image from "../assets/images/arrow.png";
@@ -37,25 +31,25 @@ const SocialSidebar = () => {
     {
       name: "GitHub",
       icon: <FaGithub />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Ayushswirlon",
       color: "hover:text-white",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/ayush-carpenter-b7bb23309",
       color: "hover:text-blue-500",
     },
     {
       name: "Twitter",
       icon: <FaTwitter />,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/ayush_carpenter",
       color: "hover:text-sky-400",
     },
     {
       name: "Instagram",
       icon: <FaInstagram />,
-      url: "https://instagram.com/yourusername",
+      url: "https://instagram.com/ayushcarpenter30",
       color: "hover:text-pink-500",
     },
   ];
