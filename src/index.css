@@ -1,7 +1,15 @@
 @import "tailwindcss";
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Amatic SC";
   src: url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap'");
