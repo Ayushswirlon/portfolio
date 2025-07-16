@@ -1,0 +1,5 @@
+.text-shadow-subtle {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1);
+  /* You can adjust the colors and blur radius for different effects */
+  /* For a slightly colored glow: text-shadow: 0 0 8px rgba(100, 149, 237, 0.5), 0 0 15px rgba(100, 149, 237, 0.3); */
+}
