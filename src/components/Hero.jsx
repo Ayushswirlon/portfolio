@@ -136,7 +136,7 @@ const Hero = () => {
             transition={{ delay: 0.7, duration: 0.7 }}
             className="text-gray-300 text-lg md:text-xl max-w-3xl mb-6"
           >
-            Softwate Engineer | Frontend developer | Backend developer |
+            Software Engineer | Frontend developer | Backend developer |
             Full-stack developer
             <br />
             Solving problems with code and creating beautiful, interactive
