@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import image from "../assets/images/arrow.png";
 import "./scroll.css"; // Ensure you have the CSS file for styles
 // Adjust the path as necessary
 
@@ -77,7 +76,7 @@ const SocialSidebar = () => {
           className="flex flex-col items-end pr-2"
         >
           <motion.div className="text-blue-400 text-2xl">
-            <img className="w-24 h-24" src={image} alt="Arrow" />
+            <img className="w-24 h-24" src="./arrow.png" alt="Arrow" />
           </motion.div>
         </motion.div>
       </div>

@@ -1,7 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { FaEnvelope, FaPhone, FaHeart } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaHeart,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
 
 const socialLinks = [
   {
@@ -13,6 +21,33 @@ const socialLinks = [
     icon: <FaPhone />,
     href: "tel:+919999999999",
     label: "Phone",
+  },
+];
+
+const mobileLink = [
+  {
+    name: "GitHub",
+    icon: <FaGithub />,
+    url: "https://github.com/Ayushswirlon",
+    color: "hover:text-white",
+  },
+  {
+    name: "LinkedIn",
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/ayush-carpenter-b7bb23309",
+    color: "hover:text-blue-500",
+  },
+  {
+    name: "Twitter",
+    icon: <FaTwitter />,
+    url: "https://x.com/ayush_carpenter",
+    color: "hover:text-sky-400",
+  },
+  {
+    name: "Instagram",
+    icon: <FaInstagram />,
+    url: "https://instagram.com/ayushcarpenter30",
+    color: "hover:text-pink-500",
   },
 ];
 
@@ -130,6 +165,30 @@ export default function Contact() {
                   </motion.div>
                 )}
               </AnimatePresence>
+            </motion.div>
+          );
+        })}
+        {mobileLink.map((link, idx) => {
+          return (
+            <motion.div
+              key={idx}
+              className="relative group md:hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <a
+                href={link.url}
+                className="flex items-center gap-2 px-5 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-gradient-to-r hover:from-blue-500/30 hover:to-purple-500/30 transition-all duration-300 text-sm font-medium group text-white"
+              >
+                <span className="group-hover:text-blue-400 transition-colors">
+                  {link.icon}
+                </span>
+                <span className="group-hover:text-white transition-colors">
+                  {link.name}
+                </span>
+              </a>
+
+              {/* Feedback message */}
             </motion.div>
           );
         })}
